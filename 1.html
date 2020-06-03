@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body> 
+<div id="nav"></div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script>
+$("#nav").load("nav.html");
+ </script>
+<p>this is test2.</p> 
+<form method="get" action="">
+<label for="phone">Your Name:</label><br><br> 
+<input type="text" name="id" /><br><br>
+ <label for="phone">Your Password: (8 digits)</label><br><br>
+ <input type="password" pattern="[a-zA-Z0-9]{8,}"Xbr><br> 
+<label for="phone">Your phone number:</label><br><br> 
+<input type="tel" id="phone" name="phone" placeholder="0912-123123" pattern="[0-9]{4}-[0-9]{6}"<br><br>
+<label for ="phone">text area</label><br><br>
+<textarea style="width: 300px;height: 300px;"></textarea><br><br>
+</form>
+<select>
+<option value="aaa">管院</option>
+<option value="bbb">科管</option>
+<option value="ccc">醫管</option>
+<option value="ddd">行管</option>
+</select><br><br>
+<form>
+請選擇居住區域<br>
+<input type="radio" name="location" value="Taipei">花連<br>
+<input type="radio" name="location" value="Taoyuan">台中<br>
+</form>
+<form>
+請勾選你的興趣<br>
+<input type="checkbox" value="Travel" name="Interest"> 旅遊<br>
+<input type="checkbox" value="Movie" name="Interest"> 電影<br>
+<input type="checkbox" value="Food" name="Interest"> 美食
+</form>
+<input type="submit" value="送出表單 "/>
+</form>
+</body> 
+
+</html>
